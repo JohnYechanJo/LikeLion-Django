@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> 맛집 추천 리스트 </title>
+</head>
+<body>
+    <h1> 맛집 추천 리스트 </h1>
+    <br>
+    <a>총 맛집 수: {{total}}</a>
+    {%for restaurant in restaurants%}
+    <div>
+        <a href="{%url 'typicalPost' restaurant.id %}">{{restaurant.restaurantName}}</a>
+        {{restaurant.foodType}}
+        {{restaurant.restaurantNumber}}
+        <a href={{restaurant.url}}>{{restaurant.url}}</a>
+    </div>
+    <br>
+    {% endfor%}
+    <br>
+    <a href="writePost">게시물 추가</a>
+
+</body>
+</html>

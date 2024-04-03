@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from frontend import views
-
+from restaurant import views as backend
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.writePost, name="writePost"),
-    path("homepage/", views.homepage, name="writePost/homepage/"),
+    path("", views.writePost, name=""),
+    path("homepage/", backend.home, name="homepage"),
+    path("homepage/writePost/", views.writePost, name="writePost"),
     path("specifiedPost/", views.specifiedPost, name="specifiedPost"),
-    path("specifiedPost/homepage/", views.homepage, name="specifiedPost/homepage"),
+    path("homepage/typicalPost/<str:id>", backend.typicalPost, name="typicalPost"),
 ]
