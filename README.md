@@ -1,1 +1,1 @@
-print("Django HW")
+Django HW
