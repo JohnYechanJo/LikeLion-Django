@@ -1,0 +1,174 @@
+<div>
+    <br>
+<h1>맛집을 공유해주세요!</h1>
+<form action="specifiedPost">
+<div>
+<label for="restaurantPlaceInput">맛집 위치:</label>
+<input id="restaurantPlaceInput" type="text" name="restaurantPlace" required autofocus/>
+</div>
+<br>
+<div>
+<label for="restaurantNameInput">맛집 이름:</label>
+<input id="restaurantNameInput" type="text" name="restaurantName" required autofocus/>
+</div>
+<br>
+<div>
+<label for="openDateInput">이용 일자:</label>
+<div id="openDateInput" name="openDate" style="margin-left: 20px;">
+    <label><input type="checkbox">월</label>
+    <label><input type="checkbox">화</label>
+    <label><input type="checkbox">수</label>
+    <label><input type="checkbox">목</label>
+    <label><input type="checkbox">금</label>
+    <label><input type="checkbox">토</label>
+    <label><input type="checkbox">일</label>
+</div>
+</div>
+<br>
+
+<label for="useStartTimeInput">이용 시작 시간:</label>
+<select id="useStartTimeInput" name="useStartTime">
+    <option value="00시">00시</option>
+    <option value="01시">01시</option>
+    <option value="02시">02시</option>
+    <option value="03시">03시</option>
+    <option value="04시">04시</option>
+    <option value="05시">05시</option>
+    <option value="06시">06시</option>
+    <option value="07시">07시</option>
+    <option value="08시">08시</option>
+    <option value="09시">09시</option>
+    <option value="10시">10시</option>
+    <option value="11시">11시</option>
+    <option value="12시">12시</option>
+    <option value="13시">13시</option>
+    <option value="14시">14시</option>
+    <option value="15시">15시</option>
+    <option value="16시">16시</option>
+    <option value="17시">17시</option>
+    <option value="18시">18시</option>
+    <option value="19시">19시</option>
+    <option value="20시">20시</option>
+    <option value="21시">21시</option>
+    <option value="22시">22시</option>
+    <option value="23시">23시</option>
+    <option value="24시">24시</option>
+</select>
+<br>
+<label for="useEndTimeInput">이용 마감 시간:</label>
+<select id="useEndTimeInput" name="useEndTime">
+    <option value="00시">00시</option>
+    <option value="01시">01시</option>
+    <option value="02시">02시</option>
+    <option value="03시">03시</option>
+    <option value="04시">04시</option>
+    <option value="05시">05시</option>
+    <option value="06시">06시</option>
+    <option value="07시">07시</option>
+    <option value="08시">08시</option>
+    <option value="09시">09시</option>
+    <option value="10시">10시</option>
+    <option value="11시">11시</option>
+    <option value="12시">12시</option>
+    <option value="13시">13시</option>
+    <option value="14시">14시</option>
+    <option value="15시">15시</option>
+    <option value="16시">16시</option>
+    <option value="17시">17시</option>
+    <option value="18시">18시</option>
+    <option value="19시">19시</option>
+    <option value="20시">20시</option>
+    <option value="21시">21시</option>
+    <option value="22시">22시</option>
+    <option value="23시">23시</option>
+    <option value="24시">24시</option>
+</select>
+<br>
+<label for="breakStartTimeInput">브레이크 시작 시간:</label>
+<select id="breakStartTimeInput" name="breakStartTime">
+    <option value="00시">00시</option>
+    <option value="01시">01시</option>
+    <option value="02시">02시</option>
+    <option value="03시">03시</option>
+    <option value="04시">04시</option>
+    <option value="05시">05시</option>
+    <option value="06시">06시</option>
+    <option value="07시">07시</option>
+    <option value="08시">08시</option>
+    <option value="09시">09시</option>
+    <option value="10시">10시</option>
+    <option value="11시">11시</option>
+    <option value="12시">12시</option>
+    <option value="13시">13시</option>
+    <option value="14시">14시</option>
+    <option value="15시">15시</option>
+    <option value="16시">16시</option>
+    <option value="17시">17시</option>
+    <option value="18시">18시</option>
+    <option value="19시">19시</option>
+    <option value="20시">20시</option>
+    <option value="21시">21시</option>
+    <option value="22시">22시</option>
+    <option value="23시">23시</option>
+    <option value="24시">24시</option>
+    <option value="없음">없음</option>
+
+</select>
+<br>
+<div>
+<label for="breakEndTimeInput">브레이크 마감 시간:</label>
+<select id="breakEndTimeInput" name="breakEndTime">
+    <option value="00시">00시</option>
+    <option value="01시">01시</option>
+    <option value="02시">02시</option>
+    <option value="03시">03시</option>
+    <option value="04시">04시</option>
+    <option value="05시">05시</option>
+    <option value="06시">06시</option>
+    <option value="07시">07시</option>
+    <option value="08시">08시</option>
+    <option value="09시">09시</option>
+    <option value="10시">10시</option>
+    <option value="11시">11시</option>
+    <option value="12시">12시</option>
+    <option value="13시">13시</option>
+    <option value="14시">14시</option>
+    <option value="15시">15시</option>
+    <option value="16시">16시</option>
+    <option value="17시">17시</option>
+    <option value="18시">18시</option>
+    <option value="19시">19시</option>
+    <option value="20시">20시</option>
+    <option value="21시">21시</option>
+    <option value="22시">22시</option>
+    <option value="23시">23시</option>
+    <option value="24시">24시</option>
+    <option value="없음">없음</option>
+</select>
+</div>
+<br>
+<div>
+<label for="foodTypeInput">음식 종류:</label>
+<select id="foodTypeInput" name="foodType">
+    <option value="한식">한식</option>
+    <option value="양식">양식</option>
+    <option value="중식">중식</option>
+    <option value="일식">일식</option>
+    <option value="아시아식">아시아식</option>
+</select>
+</div>
+<br>
+<div>
+<label for="restaurantNumberInput">전화번호:</label>
+<input id="restaurantNumberInput" type="phone2numeric" name="restaurantNumber" required autofocus/>
+</div>
+<br>
+<div>
+<label for="urlInput">인스타그램 주소:</label>
+<input id="urlInput" type="url" name="url" />
+</div>
+<br>
+<input type="submit" value="제출">
+<a href="homepage">홈페이지<a>
+</form>
+</div>
